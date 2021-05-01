@@ -1,0 +1,16 @@
+header{
+    background-color: cornflowerblue;
+    text-align: center;
+    padding: 20px;
+}
+
+main{
+width: 90%;
+margin: auto;
+}
+
+footer{
+    background-color:darkgray;
+    padding: 10px;
+    text-align: center;
+}

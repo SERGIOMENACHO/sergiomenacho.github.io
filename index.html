@@ -6,7 +6,7 @@
       <title>CIT 230 Assignment Portal | Sergio Menacho| BYU-Idaho</title>
       <meta name="description" content="Assignment web page for Ronald Silva, student in CIT 230: Web Frontend Development at Brigham Young University-Idaho">
 
-      <link rel="stylesheet" href="styles/normalize.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
       <link rel="stylesheet" href="styles/main.css">
       <link rel="stylesheet" href="styles/medium.css">
       <link rel="stylesheet" href="styles/large.css">
@@ -27,7 +27,9 @@
     <main class="clearfix">
 
         <h2>CIT 230 - Assignment Portal.</h2>
-        <ol>  
+        <hr/>
+        <ul>
+        <li>Lesson 2: <a href="./Lesson02/index.html">Design Principles</a></li>  
         <li>Lesson 3: <a>HTML Markup Validation</a></li>   
         <li>Lesson 4: <a>Planning document</a></li>
         <li>Lesson 5: <a>Weather page </a></li>
@@ -42,11 +44,16 @@
         <li>Lesson 11: <a>Jquery</a></li>
         <li>Lesson 12: <a>Mountain Spoke Site</a></li>
     
-         </ol>
+         </ul>
         
     </main>
     <footer class="clearfix">
-        <p> &#169; 2021 &#9734; Sergio Menacho  &#9734; Rexburg, Idaho &#9734; <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+        <p> &#169; 
+        <span id="currentyear"></span>
+        &#9734; Sergio Menacho  &#9734; Rexburg, Idaho &#9734;<br> 
+        <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+        <p>Last Updated:<span id="Last-Modified"></span></p>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
