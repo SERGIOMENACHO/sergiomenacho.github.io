@@ -1,0 +1,15 @@
+/* desktop view */
+@media screen and (max-width: 550px) {
+    /* beginning of media query */
+    .home-grid, nav ul {
+      display:block;
+    }  
+
+    nav ul li{
+      text-align:left;
+    }
+    .social img{
+      width: 45px;
+    }
+    /* end of media query */
+  }
