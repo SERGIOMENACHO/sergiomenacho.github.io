@@ -8,7 +8,6 @@
      color: black;
      background-color: white;
      font-size: 2rem;
-     line-height: 2rem;
      font-family: 'Raleway', sans-serif;
  }
  
@@ -31,10 +30,21 @@
      color: #FFF;
      background-color: #5FC9DC;
      font-size: 1.375em;
-     line-height: 3rem;
      font-family: 'Raleway', sans-serif;
  }
+
+nav li{
+    display: none;
+}
  
+nav li:first-child{
+    display: block;
+}
+
+.responsive li{
+    display: block;
+}
+
  nav a {
  color: #FFF;
  text-decoration: none;
