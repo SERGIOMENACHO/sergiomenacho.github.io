@@ -8,8 +8,8 @@
     <meta name="description" content="Weather Accuracy featuring the Idaho town of Preston">
 
     <link rel="stylesheet" href="https://sergiomenacho.github.io/css/normalize.css">
-    <link rel="stylesheet" media="screen and (min-width: 745px)" href="https://kaqurei.github.io/assignments/lesson-5/css/large-5.css">
-    <link rel="stylesheet" media="screen and (max-width: 745px)" href="https://kaqurei.github.io/assignments/lesson-5/css/small-5.css">
+    <link rel="stylesheet" media="screen and (min-width: 745px)" href="/Lesson05/styles/large-5.css">
+    <link rel="stylesheet" media="screen and (max-width: 745px)" href="/Lesson05/styles/small-5.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
@@ -46,7 +46,6 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
 
 <header> 
     <img src="https://cdn3.iconfinder.com/data/icons/tiny-weather-1/512/cloudy-128.png" alt="Logo image">
-
     <section class="headings">
         <h1>Weather Accuracy</h1>
         <div class="motto">Helping users travel more</div>
@@ -69,14 +68,15 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
     <h1>Preston, Idaho</h1>
 
     <div class="hero-container">
-    <img class="hero-img" src="https://kaqurei.github.io/assignments/lesson-5/images/idaho-1602027_960_720.jpg" alt="WTGI Hero Image Placeholder">
+    <img class="image-hero"src="/Lesson05/images/wdd230_image_franklinOriginal.jpeg" alt="WTGI Hero Image Placeholder">
             <div class="weather-summary">
                 <h2>Weather Summary</h2>
                 <p><strong>Currently:</strong> Snowy</p>
-                 <p><strong>High:</strong> 36&deg;</p>
-                 <p><strong>Wind Chill:</strong> 12&deg;</p>
+                <p><strong>High:</strong><span id="high"> 90</span>&deg;</p>
+                <p><strong>Low:</strong><span id="low">66</span>&deg;</p>
+                 <p><strong>Windchill:</strong><span id="windchill"></span>&deg;</p>
                  <p><strong>Humidity:</strong> 8%</p>
-                 <p><strong>Wind Speed:</strong> 8 MPH</p>
+                 <p><strong>Wind Speed:</strong><span id="windspeed"> 5</span> mph SW</p>
              </div>
     </div>
 </main>
@@ -87,7 +87,7 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
 </div>
 <br>
 <article>
-    <img class="articleimg" src="https://kaqurei.github.io/assignments/lesson-5/images/nature-3159121_960_720.jpg" alt="Flower breaking through snow">
+    <img class="articleimg" src="https://lift.opensnow.com/media-images/1579789429ed956d4d5500403d6e4129b1df06ae2a.jpg" alt="Flower breaking through snow">
     <h2>More Snow Now Possible: Weather service revises winter forecast for Idaho</h2> 
     <h3>by Madeleine Coles</h3>
     <p>Despite the cold temperatures and recent snowfall in East Idaho, the National Weather Service still says the Gem State is expected to have a warmer than normal winter.</p>
@@ -107,10 +107,9 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
     <div class="map"><img src="https://kaqurei.github.io/assignments/lesson-5/images/fishhavenmap.png" alt="Google Maps image of Fish Haven, Idaho"></div>
 </div>
 
-<footer>&copy;2021 Weather Accuracy | Attributions | <a href="https://sergiomenacho.github.io/">Sergio Menacho</a><br>May 2021</footer>
-
-<div id="jsWidth"></div>
-
+<footer>&copy;2021 Weather Accuracy | Attributions | <a href="https://sergiomenacho.github.io/">Sergio Menacho</a><br>June 2021</footer>
+<script src="windchill.js"></script>
+<script src="scripts/toggleHam.js"></script>
 </body>
 
 </html>

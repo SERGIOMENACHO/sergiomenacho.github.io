@@ -11,7 +11,7 @@ body  {
  }
  
  h1, h3 {
- color: #FFAD05;
+ color: black;
  }
  
  h3 {
@@ -24,7 +24,7 @@ body  {
  
  header {
      color: #5995ED;
-     background-color: #044389;
+     background-color: #FFBFB7;
      font-size: 1rem;
      line-height: 1rem;
      font-family: 'Raleway', sans-serif;
@@ -47,7 +47,7 @@ body  {
  
  nav {
      color: #FFF;
-     background-color: #5995ED;
+     background-color: #5FC9DC;
      font-size: 1.375em;
      line-height: 3rem;
      font-family: 'Raleway', sans-serif;
@@ -81,13 +81,20 @@ body  {
  }
  
  .hero-container {
- position: relative;
- width: 500px;
+ position:sticky;
+ height: auto;
+ max-width: 500px;
  }
  
+.image-hero{
+    height:400px;
+    max-width:500px;
+  }
+
  .weather-summary {
  background-color: rgba(128,206,236, 0.6);
- width: 250px;
+ width: auto;
+ height: auto;
  position: absolute;
  top: 25px;
  left: 25px;
@@ -105,7 +112,7 @@ body  {
  }
  
  article {
- background-color: #5995ED;
+ background-color: #5FC9DC;
  padding: 1rem;
  text-align: left !important;
  border: solid #FFAD05 1px;
@@ -128,7 +135,7 @@ body  {
      flex-flow: row wrap;
      justify-content: space-around;
      color: #FFF;
-     background-color: #5995ED;
+     background-color: #5FC9DC;
  
      font-size: 1rem;
      line-height: 1.5rem;
@@ -136,15 +143,9 @@ body  {
      padding: 1rem;
  }
  
- .map {
-   max-width: 100%;
-   height: auto;
-   box-shadow: 10px 10px 5px #044389;
- }
- 
  footer {
      color: #FFF;
-     background-color: #80CEEC;
+     background-color: #FFBFB7;
  
      font-size: 1rem;
      line-height: 1rem;

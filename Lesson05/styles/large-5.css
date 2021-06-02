@@ -11,7 +11,7 @@ body  {
  }
  
  h1, h3 {
- color: #FFAD05;
+ color: black;
  }
  
  h3 {
@@ -23,8 +23,8 @@ body  {
  }
  
  header {
-     color: #5995ED;
-     background-color: #044389;
+     color: black;
+     background-color: #FFBFB7;
      font-size: 2rem;
      line-height: 2rem;
      font-family: 'Raleway', sans-serif;
@@ -67,7 +67,7 @@ body  {
    padding-left: 20%;
    padding-right: 20%;
    overflow: hidden;
-   background-color: #5995ED;
+   background-color: #5FC9DC;
    position: -webkit-sticky; /* Safari */
    position: sticky;
    top: 0;
@@ -160,10 +160,16 @@ body  {
  width: 968px;
  margin: auto;
  }
+
+ .image-hero{
+   height:auto;
+   width:940px;
+ }
  
  .weather-summary {
  background-color: rgba(128,206,236, 0.6);
- width: 250px;
+ width: auto;
+ height: auto;
  position: absolute;
  top: 25px;
  left: 25px;
@@ -193,11 +199,10 @@ body  {
  margin: 1rem;
  float: right;
  padding-right: 0px;
- box-shadow: 10px 10px 5px #044389;
  }
  
  article {
- background-color: #5995ED;
+ background-color: #5FC9DC;
  width: 900px;
  padding: 1rem;
  margin: auto;
@@ -226,7 +231,7 @@ body  {
      flex-flow: row wrap;
      justify-content: space-around;
      color: #FFF;
-     background-color: #5995ED;
+     background-color: #5FC9DC;
  
      font-size: 1rem;
      line-height: 1.5rem;
@@ -236,15 +241,9 @@ body  {
      padding: 1rem;
  }
  
- .map {
-   max-width: 100%;
-   height: auto;
-   box-shadow: 10px 10px 5px #044389;
- }
- 
  footer {
      color: #FFF;
-     background-color: #80CEEC;
+     background-color: #FFBFB7;
  
      font-size: 1rem;
      line-height: 1rem;
