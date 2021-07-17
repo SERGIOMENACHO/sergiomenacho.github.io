@@ -1,0 +1,35 @@
+.sample-rounded-box {
+    border-radius: 10px;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: white;
+    margin: 10px;   
+}
+
+.only-bottom-rounded {
+    border-radius: 0 0 10px 10px;    
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: white;
+    margin: 10px;      
+}
+
+.circle {
+background-color: blue;
+border-radius: 100px;    
+width: 200px;
+height: 200px;
+line-height: 200px;
+display: grid;
+place-items: center;
+text-align: center;
+color: white;   
+}

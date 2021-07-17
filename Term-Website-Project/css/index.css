@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+#content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Patua One";
+  text-align: center;
+  color: #0311AA;
+  background-color: #EFC011;
+  border-top: 10px double;
+  border-bottom: 10px double;
+  padding: 20px;
+  margin: 0;
+  font-size: 50px;
+  
+}
+body{
+  background-color: #811111;
+  margin:0;
+}
+header{
+  background-color: #EFC011;
+}
+p {
+  font-family: "Raleway";
+  margin: 1em;
+  border: 0;
+  font-size: 25px;
+  color: #EFC011;
+}
+.banner-box img {
+    grid-column: 1 / -1; 
+    grid-row: 1;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.home-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%;                    
+  align-items: center;
+  justify-items: center;
+}
+.home-paragraph{
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.home-img{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin: 25px;
+}
+header {
+  display: grid;
+  grid-template-columns: 150px auto;
+  align-items: center;
+}
+nav ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+  margin: 10px;
+}
+.button {
+  background-color: #EFC011;
+  border: 1px solid #811111;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  cursor: pointer;
+  float: left;
+  border-radius: 12px;
+}
+.button:hover {
+  background-color: white;
+}
+a {
+  color: #811111;
+}
+footer{
+  display: grid;
+  grid-template-columns: 1fr auto ;
+  grid-template-rows: 55px;
+  background-color: #811111;
+}
+#facebook{
+  margin: 0 50px 0 50px;
+}
+#youtube{
+  margin: 0 50px 0 50px;
+}
+#instagram{
+  margin: 0 50px 0 50px;
+}
+#siteplan{
+  color:#EFC011;
+}
