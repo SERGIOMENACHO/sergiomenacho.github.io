@@ -1,115 +1,139 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Weather Accuracy | Preston, Idaho</title>
-    <meta name="description" content="Weather Accuracy featuring the Idaho town of Preston">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CS230 Weather Page Planning Assignment">
+    <title>Blue Sky Weather - Preston, Idaho</title>
+    <link rel="shortcut icon" href="/lesson5/images/favicon.ico">
+    <link rel="stylesheet" href="/Lesson05/css/normalize.css">
+    <link rel="stylesheet" href="/Lesson05/css/small.css">
+    <link rel="stylesheet" href="/Lesson05/css/medium.css">
+    <link rel="stylesheet" href="/Lesson05/css/large.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7cOpen+Sans&display=swap
+    " rel="stylesheet">
 
-    <link rel="stylesheet" href="https://sergiomenacho.github.io/css/normalize.css">
-    <link rel="stylesheet" media="screen and (min-width: 745px)" href="/Lesson05/styles/large-5.css">
-    <link rel="stylesheet" media="screen and (max-width: 745px)" href="/Lesson05/styles/small-5.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
-    <script>
-function jsUpdateSize(){
-    // Get the dimensions of the viewport
-    var width = window.innerWidth ||
-                document.documentElement.clientWidth ||
-                document.body.clientWidth;
-    var height = window.innerHeight ||
-                 document.documentElement.clientHeight ||
-                 document.body.clientHeight;
-
-    document.getElementById('jsWidth').innerHTML = width;  // Display the width
-    document.getElementById('jsHeight').innerHTML = height;// Display the height
-};
-window.onload = jsUpdateSize;       // When the page first loads
-window.onresize = jsUpdateSize;     // When the browser changes size
-
-function jqUpdateSize(){
-    // Get the dimensions of the viewport
-    var width = $(window).width();
-    var height = $(window).height();
-
-    $('#jqWidth').html(width);      // Display the width
-    $('#jqHeight').html(height);    // Display the height
-};
-$(document).ready(jqUpdateSize);    // When the page first loads
-$(window).resize(jqUpdateSize);     // When the browser changes size
-    </script>
+    
 </head>
 
+
 <body>
+    <div id="pancake"><h1 class="banner">Saturday = Preston Pancakes in the Park!<br>9:00 a.m. Saturday at the city park!</h1></div>
+    <header>
+        <div class="logo">
+          <figure>
+            <img src="https://cdn3.iconfinder.com/data/icons/tiny-weather-1/512/cloudy-128.png" alt="Logo image">
+          </figure>
+        </div>
+        <div class="title">
+          <h1>Weather Accuracy</h1>
+          <div class="subheading">Helping Users Travel More</div>
+        </div>
+        <button class="hamburger" onclick="toggleHam()">
+          &equiv;
+        </button>
+      </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="/lesson5/preston-5.html">Home</a></li>
+            <li><a href="/lesson5/preston-5.html">Preston</a></li>
+            <li><a href="/lesson5/soda-springs.html">Soda Springs</a></li>
+            <li><a href="/lesson5/fish-haven.html">Fish Haven</a></li>
+            <li><a href="/lesson5/storm-center.html">Storm Center</a></li>
+            <li><a href="/lesson5/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
 
-<header> 
-    <img src="https://cdn3.iconfinder.com/data/icons/tiny-weather-1/512/cloudy-128.png" alt="Logo image">
-    <section class="headings">
-        <h1>Weather Accuracy</h1>
-        <div class="motto">Helping users travel more</div>
-    </section>
-</header>
+    <main>
+        <div class="page"> 
+            <h1>Preston</h1>
+        </div>
+        <section class="weatherSummary">
+            <h3>Weather Summary</h3>
 
-<nav>
-<a id="menu-link" href="#">&#9776; Menu</a>
-    <ul>
-        <li id="current-page"><a href="#">Preston</a></li>
-        <li><a href="/Lesson10/index.html">Home</a></li>
-        <li><a href="#">Soda Springs</a></li>
-        <li><a href="#">Fish Haven</a></li>
-        <li><a href="#">Storm Center</a></li>
-        <li><a href="/Lesson06/index.html">Gallery</a></li>
-    </ul>
-</nav>
+            <img src="/lesson5/images/Optimized-five-people-jumping-in-open-field-1406864.jpg" alt="five people jumping in an open field">
+            <div class="summaryInset">
+                <p> Currently: Sunny</p>
+                <p> Temperature: 65ºF</p>
+                <p> Wind Chill: 63ºF</p>
+                <p> Humidity: 32%</p>
+                <p> Wind Speed: 4 MPH</p>
+            </div>
+        </section>
 
-<main>
-    <h1>Preston, Idaho</h1>
+        <section class="fiveDayForcast">
+            <h3>5 Day Forcast</h3>
+            <div class="flex">
+                <div class="col">
+                    <span class="label">Monday</span>
+                    <img src="/lesson5/images/iconfinder_flash-cloud_2995010.png" alt="cloudy with lightning icon">
+                    <span class="data">High Temp<br>50º</span>
+                </div>
+                <div class="col">
+                    <span class="label">Tuesday</span>
+                    <img src="/lesson5/images/iconfinder_snow-cloud_2995007.png" alt="cloudy with snow icon">
+                    <span class="data">High Temp<br>35º</span>
+                </div>
+                <div class="col">
+                    <span class="label">Wednesday</span>
+                    <img src="/lesson5/images/iconfinder_sun_2995005.png" alt="sun icon">
+                    <span class="data">High Temp<br>60º</span>
+                </div>
+                <div class="col">
+                    <span class="label">Thursday</span>
+                    <img src="/lesson5/images/iconfinder_rain-cloud_2995003.png" alt="rain cloud icon">
+                    <span class="data">High Temp<br>45º</span>
+                </div>
+                <div class="col">
+                    <span class="label">Friday</span>
+                    <img src="/lesson5/images/iconfinder_snow_2995006.png" alt="snowicon">
+                    <span class="data">High Temp<br>30º</span>
+                </div>
+        </section>
 
-    <div class="hero-container">
-    <img class="image-hero"src="/Lesson05/images/wdd230_image_franklinOriginal.jpeg" alt="WTGI Hero Image Placeholder">
-            <div class="weather-summary">
-                <h2>Weather Summary</h2>
-                <p><strong>Currently:</strong> Snowy</p>
-                <p><strong>High:</strong><span id="high"> 90</span>&deg;</p>
-                <p><strong>Low:</strong><span id="low">66</span>&deg;</p>
-                 <p><strong>Windchill:</strong><span id="windchill"></span>&deg;</p>
-                 <p><strong>Humidity:</strong> 8%</p>
-                 <p><strong>Wind Speed:</strong><span id="windspeed"> 5</span> mph SW</p>
-             </div>
-    </div>
-</main>
-<br>
-<div class="fiveDayForecast">
-    <h3>5 Day Forecast</h3>
-    <img class="forecastimg" src="https://kaqurei.github.io/assignments/lesson-5/images/forecast.png" alt="5 Day Forecast Placeholder">
-</div>
-<br>
-<article>
-    <img class="articleimg" src="https://lift.opensnow.com/media-images/1579789429ed956d4d5500403d6e4129b1df06ae2a.jpg" alt="Flower breaking through snow">
-    <h2>More Snow Now Possible: Weather service revises winter forecast for Idaho</h2> 
-    <h3>by Madeleine Coles</h3>
-    <p>Despite the cold temperatures and recent snowfall in East Idaho, the National Weather Service still says the Gem State is expected to have a warmer than normal winter.</p>
-    <p>The weather service’s winter outlook was released last month and predicted some states, including Idaho, would have warmer and drier winters.</p>
-    <p>The weather service has since revised that forecast and now says it’s no longer so sure about this winter being drier than normal in Idaho. There’s a chance the state could receive more ...</p>
-    <p><button onclick="window.location.href = 'https://www.idahostatejournal.com/news/local/more-snow-now-possible-weather-service-revises-winter-forecast-for/article_9fdd96b6-238e-55fe-9bd7-2a572fc93a60.html';">Continue Reading Article...</button></p>
-</article>
-<br><br>
-<div class="contact">
-    <p><strong>Weather Accuracy</strong>
-        <br>321 Sesame Street
-        <br>Fish Haven, ID 83287</p>
-        <p> &#9742; 999.999.9999
-            <br>
-            &#9993; contact@wtgiweather.news
-        </p>
-    <div class="map"><img src="https://kaqurei.github.io/assignments/lesson-5/images/fishhavenmap.png" alt="Google Maps image of Fish Haven, Idaho"></div>
-</div>
+        <section class="article">
+            
+            <h3>Catchy Title!</h3>
 
-<footer>&copy;2021 Weather Accuracy | Attributions | <a href="https://sergiomenacho.github.io/">Sergio Menacho</a><br>June 2021</footer>
-<script src="windchill.js"></script>
-<script src="scripts/toggleHam.js"></script>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar, diam non ullamcorper semper, lectus metus posuere odio, at tristique mauris sem eget quam. Integer ligula mauris, malesuada eget felis vel, semper viverra ligula. Vestibulum eleifend congue ipsum a convallis. Suspendisse potenti. Cras sit amet tempus orci. Aliquam nec metus dui. Morbi et nunc id justo vestibulum faucibus at ac erat. Suspendisse eget iaculis augue, in faucibus sapien. Aliquam molestie ligula sit amet risus rhoncus suscipit. Etiam ultricies, libero dictum elementum ultricies, tortor lacus eleifend lorem, eu maximus augue mi eget ligula. In hac habitasse platea dictumst.
+
+            Vestibulum placerat pharetra ipsum a tincidunt. Mauris pretium, lacus ut faucibus pharetra, purus mi viverra sapien, a pellentesque mauris sapien vel massa. Nullam et orci augue. Integer in volutpat nisl. Nulla ut neque vitae metus fringilla congue. Sed at urna mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum vehicula felis et volutpat semper. Donec tincidunt eros sed convallis consequat. Fusce id iaculis sapien. Nam quis tempor arcu.</p>
+            <img src="/lesson5/images/Optimized-wooden-log-near-body-of-water-1694642.jpg" alt="log near a body of water">
+            
+        </section>
+
+        <section class="contactInformation">
+            <h3>Contact Information</h3>
+            <section id="contactGrid">
+                <div class="column">
+                <img src="/lesson5/images/rsz_capture_preston_idaho.jpg" alt="map of preston">
+                </div>
+                <div class="column">
+                    
+                    <p>Phone: 555-867-5309</p>
+                    <p>Email: email@donotemail.org</p>
+                    <p>Address: 123 Any Street, Preston Idaho, 12345</p>
+                
+                 </div>
+            </section>
+        </section>
+    
+    </main>
+
+
+    <footer>
+        <p>&copy; 2020 | Darrin Fry | Utah |
+            <a href="https://www.byui.edu/online " >BYUI Online Learning</a> </p>
+        <div id="last_modified"></div>
+        <script src="/lesson5/js/updated.js"> </script>
+        <script src="/lesson5/js/menu.js"> </script>
+        <script src="/lesson5/js/pancake.js"></script>
+    </footer>
+    
 </body>
 
 </html>
