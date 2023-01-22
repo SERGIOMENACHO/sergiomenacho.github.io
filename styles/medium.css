@@ -1,25 +1,2 @@
 @media only screen and (min-width: 32.5em) {
-    header{
-        width: 70%;
-        margin: 20px auto;
-        position: relative;
-        border-radius: 10px;
-    }
-    h1{
-        text-align: left;
-    }
-    main{
-        width: 70%;
-        }
-    footer{
-        width: 70%;
-        margin: auto;
-        border-radius: 10px;
-    }
-.mypicture{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    box-shadow: 2px 2px 5px black;
-}
 }
