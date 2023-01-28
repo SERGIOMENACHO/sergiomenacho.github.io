@@ -1,0 +1,19 @@
+nav {
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+}
+
+nav li {
+    display: block;
+    padding: 20px ;
+}
+
+header {
+    
+}
+
