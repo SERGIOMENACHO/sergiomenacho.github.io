@@ -1,19 +1,29 @@
-nav {
+/*desktop version*/
+@media only screen and (min-width: 1000px) {
+        nav {
+
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-evenly; */
+    }
+
+    nav li {
+        display: block;
+        padding: 20px ;
+    }
+
+    header {    
+        
+    }
+
+    #header-photo{
+        width: 30%;
+
+
+    }
+
 
 }
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-evenly; */
-}
-
-nav li {
-    display: block;
-    padding: 20px ;
-}
-
-header {
-    
-}
-
