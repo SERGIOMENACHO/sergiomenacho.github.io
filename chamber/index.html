@@ -37,16 +37,33 @@
         <div class="event">
             Event
         </div>
-        <div class="main-content">hero with site name and call to action </div>
+        <div class="main-content">
+            <picture>
+                <source media="(max-width: 480px)" srcset="images/lima-small.jpg">
+                <source media="(max-width: 1000px)" srcset="images/lima-medium.jpg">
+                <img src="images/lima.webp" alt="hero image">
+            </picture>
+        </div>
         <div class="spotlights">Spotlights</div>
         <div class="weather">
-            weather
+            <h2>weather</h2>
+            
+            <div class = "logo-number">
+                <img src="images/weather.png" alt="weather logo">
+                <h3>33&#8451</h3>
+            </div>
+           
+            
+            <h3 class="partly-cloudy">Partly Cloudy</h3>
+            <hr>
+            <h4>Wind Speed: 2.5 km/h</h4>
+            <h4 class="wind-chill-number">Wind Chill: </h4>
         </div>
           <div class="join">Join</div>
           <div class="release">News release</div>
 
     </main>
-    <footer>
+    <footer> 
         <div id="about">
             <img class="img-fluid" src="images/lima.webp" width="80" height="80" alt="Lima Chamber of Commerce Logo">
             <div id="address">
@@ -67,6 +84,6 @@
             <p><span id="lastVisited"></span></p>
         </div>
     </footer>
-<script src="scripts/index.js"></script>
+<script src="scripts/windchill.js"></script>
 </body>
 </html>

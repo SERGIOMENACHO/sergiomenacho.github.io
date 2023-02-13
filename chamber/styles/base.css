@@ -127,3 +127,61 @@ footer #about{
     height: 80px;
     align-items: center;
 }
+
+.logo-number {
+    display: flex;
+    flex-direction: row;
+}
+
+.weather * {
+    /*border: solid black .1em;*/
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.weather hr {
+    border: solid white 1px;
+}
+
+.weather h2{
+    color:white;
+    font-size: 1.5em;
+}
+
+.logo-number h3{
+    color:white;   
+    font-size: 1.9em; 
+}
+
+.weather > h3{
+    color:white;   
+    font-size: 1.5em;
+}
+
+.weather h4{
+    color:white;   
+    font-size: 1em;
+
+}
+main > div {
+    background-color: purple;
+}
+.weather div {
+    background-color: purple;
+}
+
+.main-content picture {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.main-content picture img {
+    width: 100%;
+}
+
+header #logo a img {
+    width: 75px;
+    height: auto;
+}
