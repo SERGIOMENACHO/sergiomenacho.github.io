@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/medium.css">    
     <link rel="stylesheet" href="styles/large.css">
     <title>Document</title>
 </head>
@@ -16,7 +16,7 @@
             <div id="logo">
                 <a href="index.html"><img id = "header-photo" src="images/lima.webp" alt="Lima Chamber of Commerce Logo"></a>
             </div>
-            <a href="#" id="hamburger">&#9776;</a>
+           
             <nav>
                 <ul>
                     <li><a href="/WDD230/chamber/discover.html">Discover</a></li>
@@ -29,6 +29,9 @@
                 <a href="#"><img src="images/facebook-logo.png" alt="Facebook"></a>
                 <a href="#"><img src="images/instagram-logo.png" alt="Instagram"></a>
             </div>
+
+            <!-- Hamburger -->
+            <div id="hamburger">&#9776;</div>
         </div>
         <div id="date">Saturday 28 January 2023</div>
     </header>
@@ -39,7 +42,7 @@
         </div>
         <div class="main-content">
             <picture>
-                <source media="(max-width: 480px)" srcset="images/lima-small.jpg">
+                <source media="(max-width: 750px)" srcset="images/lima-small.jpg">
                 <source media="(max-width: 1000px)" srcset="images/lima-medium.jpg">
                 <img src="images/lima.webp" alt="hero image">
             </picture>
@@ -61,7 +64,6 @@
         </div>
           <div class="join">Join</div>
           <div class="release">News release</div>
-
     </main>
     <footer> 
         <div id="about">
@@ -84,6 +86,7 @@
             <p><span id="lastVisited"></span></p>
         </div>
     </footer>
-<script src="scripts/windchill.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

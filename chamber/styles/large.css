@@ -1,8 +1,5 @@
 /*desktop version*/
 @media only screen and (min-width: 1000px) {
-        nav {
-
-    }
 
     nav ul {
         display: flex;
@@ -15,14 +12,44 @@
         padding: 20px ;
     }
 
-    header {    
-        
-    }
 
     #header-photo{
         width: 30%;
 
 
+    }
+
+    header #hamburger {
+        display: none;
+    }
+    
+    #logo {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        grid-column: 4/7;
+        grid-row: 1/2;
+        transform: translateY(0);
+        transition: 0s;
+        z-index: 0;
+    }
+    
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+    
+    nav ul li {
+        margin: 0;
+    }
+    
+    
+    .socials {
+        grid-column: 8/9;
     }
 
 
