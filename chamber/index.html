@@ -8,32 +8,35 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">    
     <link rel="stylesheet" href="styles/large.css">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    
+    <title>Home | Chamber of Commerce</title>
 </head>
 <body>
     <header>
         <div id ="header-top">
             <div id="logo">
-                <a href="index.html"><img id = "header-photo" src="images/lima.webp" alt="Lima Chamber of Commerce Logo"></a>
+                Lima Chamber of Commerce
             </div>
-           
             <nav>
                 <ul>
-                    <li><a href="/WDD230/chamber/discover.html">Discover</a></li>
-                    <li><a href="/WDD230/chamber/directory.html">Directory</a></li>
-                    <li><a href="/WDD230/chamber/join.html">Join</a></li>
-                    <li><a href="/WDD230/chamber/contact.html">Contact</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="socials">
-                <a href="#"><img src="images/facebook-logo.png" alt="Facebook"></a>
-                <a href="#"><img src="images/instagram-logo.png" alt="Instagram"></a>
+                <p id = "datetime"></p>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
 
             <!-- Hamburger -->
             <div id="hamburger">&#9776;</div>
         </div>
-        <div id="date">Saturday 28 January 2023</div>
+        <div id="date"></div>
     </header>
     <div class="alert">"🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."</div>
     <main>
@@ -67,8 +70,12 @@
     </main>
     <footer> 
         <div id="about">
-            <img class="img-fluid" src="images/lima.webp" width="80" height="80" alt="Lima Chamber of Commerce Logo">
-            <div id="address">
+            <img
+            class="img-fluid"
+            src="images/footerpic.png"
+            alt="Lima Chamber of Commerce Logo"
+          />            
+          <div id="address">
                 <h3>Visit Us</h3>
                 <p>Jr. Cartagena 565</p>
                 <p>Lima, 15084, Perú</p>
@@ -81,12 +88,11 @@
             </div>
         </div>
         <div id="copyright">
-            <p>&copy; <span id="copyrightYear"></span> Lima Chamber of Commerce | Sergio Menacho | WDD230 Project | </p>
-            <p>Last Modified: <span id="lastModified"></span></p>
-            <p><span id="lastVisited"></span></p>
+            <p>&copy; <span id="copyrightYear"></span> Lima Chamber of Commerce | WDD230 Project | Last Modified: <span id="lastModified"></span> | Number of Visit: <span id="Visited"></span></p>
         </div>
     </footer>
     <script src="scripts/windchill.js"></script>
-    <script src="scripts/script.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/localStorage.js"></script>
 </body>
 </html>

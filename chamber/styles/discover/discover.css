@@ -1,0 +1,41 @@
+/* Styling the discover page */
+main.discover {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5em;
+    max-width: 85%;
+    margin: 50px auto;
+    justify-items: center;
+}
+
+.discover .discover-element {
+    padding: 0;
+    text-align: center;
+    background-color: white;
+    max-width: 425px;
+}
+
+.discover .discover-element img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+}
+
+.discover-element p {
+    width: 80%;
+    margin: auto;
+    padding: 0.5em;
+    font-size: 18px;
+}
+
+@media only screen and (min-width: 750px) {
+    main.discover {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    main.discover {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
