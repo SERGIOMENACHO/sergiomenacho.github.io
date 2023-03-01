@@ -29,3 +29,14 @@ document.querySelector('#date').textContent = new Date(Date.now()).toLocaleStrin
 
 let lastModified = document.getElementById("lastModified");
 lastModified.textContent = document.lastModified;
+
+
+/* -------------------------------FORM------------------------------------ */
+const hiddenInput = document.querySelector("#loadDate");
+const submitBtn = document.querySelector('input[type="submit"');
+// const form = document.querySelector("form")
+
+submitBtn.addEventListener('click', ()=> {
+    hiddenInput.value = document.lastModified;
+    console.log(hiddenInput.value);
+})
