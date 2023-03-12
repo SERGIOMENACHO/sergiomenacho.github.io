@@ -182,6 +182,11 @@ main > div {
     background-color: purple;
 }
 
+
+main.directory > div {
+    background-color: transparent;
+}
+
 .main-content picture {
     width: 100%;
     height: auto;
@@ -194,4 +199,13 @@ main > div {
 header #logo a img {
     width: 75px;
     height: auto;
+}
+
+
+.businesses.grid-view .element section h2 {
+    font-size: 1em;
+}
+.businesses.grid-view .element section p {
+    height: 35px;
+    font-size: 0.8em;
 }

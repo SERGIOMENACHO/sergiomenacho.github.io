@@ -33,7 +33,7 @@ lastModified.textContent = document.lastModified;
 
 /* -------------------------------FORM------------------------------------ */
 const hiddenInput = document.querySelector("#loadDate");
-const submitBtn = document.querySelector('input[type="submit"');
+const submitBtn = document.querySelector('input[type="submit"]');
 // const form = document.querySelector("form")
 
 submitBtn.addEventListener('click', ()=> {

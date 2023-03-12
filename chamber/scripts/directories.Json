@@ -1,0 +1,70 @@
+{
+    "directories": [
+      {
+        "name": "Mc Donald",
+        "description": "job",
+        "address": "California",
+        "phone": "032 53 015 59",
+        "url" : "youtube.com",
+        "img" : "https://plazavea.vteximg.com.br/arquivos/opg-fb-plazavea.jpg?v=637898668297670000"
+      },
+      {
+        "name": "GREEN Company Sarl",
+        "description": "job",
+        "address": "Lot 01B090A Ambolomadinika Toamasina, 501",
+        "phone": "032 53 015 59",
+        "url" : "youtube.com",
+        "img" : "https://news.chastin.com/wp-content/uploads/2022/10/Acheter-action-Walmart.jpeg"
+      },{
+        "name": "GREEN Company Sarl",
+        "description": "job",
+        "address": "Lot 01B090A Ambolomadinika Toamasina, 501",
+        "phone": "032 53 015 59",
+        "url" : "youtube.com",
+        "img" : "https://www.gstatic.com/bfe/apps/website/img/h/102479967-calculator-paper-1440.jpg"
+      },{
+        "name": "GREEN Company Sarl",
+        "description": "job",
+        "address": "Lot 01B090A Ambolomadinika Toamasina, 501",
+        "phone": "032 53 015 59",
+        "url" : "youtube.com",
+        "img" : "https://www.gstatic.com/bfe/apps/website/img/h/102479967-calculator-paper-1440.jpg"
+      },{
+        "name": "GREEN Company Sarl",
+        "description": "job",
+        "address": "Lot 01B090A Ambolomadinika Toamasina, 501",
+        "phone": "032 53 015 59",
+        "url" : "youtube.com",
+        "img" : "https://www.gstatic.com/bfe/apps/website/img/h/102479967-calculator-paper-1440.jpg"
+      },{
+        "name": "GREEN Company Sarl",
+        "description": "job",
+        "address": "Lot 01B090A Ambolomadinika Toamasina, 501",
+        "phone": "032 53 015 59",
+        "url" : "youtube.com",
+        "img" : "https://www.gstatic.com/bfe/apps/website/img/h/102479967-calculator-paper-1440.jpg"
+      },{
+        "name": "GREEN Company Sarl",
+        "description": "job",
+        "address": "Lot 01B090A Ambolomadinika Toamasina, 501",
+        "phone": "032 53 015 59",
+        "url" : "youtube.com",
+        "img" : "https://www.gstatic.com/bfe/apps/website/img/h/102479967-calculator-paper-1440.jpg"
+      },{
+        "name": "GREEN Company Sarl",
+        "description": "job",
+        "address": "Lot 01B090A Ambolomadinika Toamasina, 501",
+        "phone": "032 53 015 59",
+        "url" : "youtube.com",
+        "img" : "https://www.gstatic.com/bfe/apps/website/img/h/102479967-calculator-paper-1440.jpg"
+      },{
+        "name": "GREEN Company Sarl",
+        "description": "job",
+        "address": "Lot 01B090A Ambolomadinika Toamasina, 501",
+        "phone": "032 53 015 59",
+        "url" : "youtube.com",
+        "img" : "https://www.gstatic.com/bfe/apps/website/img/h/102479967-calculator-paper-1440.jpg"
+      }
+    ]
+
+  }

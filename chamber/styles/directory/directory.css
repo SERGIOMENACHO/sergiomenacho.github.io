@@ -1,0 +1,51 @@
+main.directory {
+    display: block;
+}
+
+.businesses {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.businesses .element {
+    width: 95%;
+    max-width: 400px;
+    background-color: #14213d;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.281);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+    
+}
+
+.businesses .element img {
+    width: 100%;
+    /* height: auto; */
+    height: 100px;
+}
+
+.businesses.grid-view .element img {
+    min-height: 196px;
+}
+.businesses.grid-view .element section {
+    margin-left: 10px;
+}
+
+.businesses.grid-view .element section h2 {
+    font-size: 1em;
+}
+.businesses.grid-view .element section p {
+    height: 35px;
+    font-size: 0.8em;
+}
+
+.directory .view-option {
+    display: none;
+}

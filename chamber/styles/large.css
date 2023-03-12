@@ -83,4 +83,7 @@
         grid-column: 2/4;
         grid-row: 3/4;
     }
+
+    .businesses {
+        grid-template-columns: 1fr 1fr 1fr;}
 }

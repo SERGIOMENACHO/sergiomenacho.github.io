@@ -38,5 +38,65 @@
         grid-column: 1/2;
         grid-row: 4/5;
     }
+
+    /* Directory */
+    .businesses {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .directory .view-option {display: block;}
+
+    .view-option ul {display: flex;padding: 0;}
+
+    .view-option ul li {
+        width: 100px;
+        padding: 10px;
+        box-shadow: 1px 2px 3px 2px rgba(0, 0, 0, 0.281);
+        margin-right: 15px;
+        border-radius: 5px;
+        list-style: none;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .view-option ul li.active {
+        color: white;
+        background-color: #14213d;
+    }
+
+    /* list view version */
+    .businesses.list-view {
+        grid-template-columns: 1fr;
+      }
+      
+      .businesses.list-view .element {
+          max-width: 100%;
+          padding: 5px 25px;
+          box-sizing: border-box;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+      }
+      
+      .businesses.list-view .element img {
+          display: none;
+      }
+      
+      .businesses.list-view .element button {
+        margin-right: 50px;
+        border-radius: 5px;
+      }
+      
+      .businesses.list-view .element section h2 {
+        margin: 10px auto;
+        font-size: 1em;
+      }
+      .businesses.list-view .element section p {
+        font-size: 0.8em;
+      }
+      
+      .businesses.list-view .element section {width: 75%;}
+      
+
 }
 
