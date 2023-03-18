@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">    
     <link rel="stylesheet" href="styles/large.css">
-
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
     
     <title>Join | Chamber of Commerce</title>
@@ -17,9 +16,9 @@
 <body>
     <header>
         <div id ="header-top">
-            <div id="logo">
-                Lima Chamber of Commerce
-            </div>
+            <a id="logo" href="index.html">
+                <h1 id="logo">Lima Chamber of Commerce</h1>
+            </a>
             <nav>
                 <ul>
                     <li><a href="discover.html">Discover</a></li>
@@ -82,8 +81,12 @@
     </main>
     <footer> 
         <div id="about">
-            <img class="img-fluid" src="images/lima.webp" width="80" height="80" alt="Lima Chamber of Commerce Logo">
-            <div id="address">
+            <img
+            class="img-fluid"
+            src="images/footerpic.png"
+            alt="Lima Chamber of Commerce Logo"
+          />            
+          <div id="address">
                 <h3>Visit Us</h3>
                 <p>Jr. Cartagena 565</p>
                 <p>Lima, 15084, Perú</p>
@@ -96,12 +99,9 @@
             </div>
         </div>
         <div id="copyright">
-            <p>&copy; <span id="copyrightYear"></span> Lima Chamber of Commerce | Sergio Menacho | WDD230 Project | </p>
-            <p>Last Modified: <span id="lastModified"></span></p>
-            <p><span id="lastVisited"></span></p>
+            <p>&copy; <span id="copyrightYear"></span> Lima Chamber of Commerce | WDD230 Project | Last Modified: <span id="lastModified"></span> | Number of Visit: <span id="Visited"></span></p>
         </div>
     </footer>
-    <script src="scripts/windchill.js"></script>
     <script src="scripts/index.js"></script>
 </body>
 </html>

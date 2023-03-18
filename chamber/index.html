@@ -18,7 +18,6 @@
         <div id ="header-top">
             <a id="logo" href="index.html">
                 <h1 id="logo">Lima Chamber of Commerce</h1>
-      
             </a>
             
             <nav>
@@ -43,7 +42,8 @@
     <div class="alert">"🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."</div>
     <main>
         <div class="event">
-            Event
+            <h2>Event</h2>
+            <p> Come to a City Council meeting on February 6th, 2023 from 6:00 to 8:00 PM at the City Council Chambers at General Vivanco avenue 859</p>
         </div>
         <div class="main-content">
             <picture>
@@ -51,24 +51,50 @@
                 <source media="(max-width: 1000px)" srcset="images/lima-medium.jpg">
                 <img src="images/lima.webp" alt="hero image">
             </picture>
+            <button onclick="location.href='join.html'">Join Now</button>
         </div>
-        <div class="spotlights">Spotlights</div>
+        <div class="spotlights">
+            <!-- Spotlights -->
+            <div class="spotlight-element">
+                <h2>Free Electronic ID's to Children in Lima</h2>
+                <img src="images/dni electronico.jpg" alt="Free Electronic ID">
+                <p>Children will now receive electronic id's. It is important to mention that the second appointment will be on March 30th</p>
+            </div>
+            <div class="spotlight-element">
+                <h2>Free Career Fair</h2>
+                <img src="images/feria del empleo.jpg" alt="Feria del Empleo">
+                <p>
+                    Are you looking for a new job?
+                    In coordination with the Ministry of Labor and Employment Promotion of Peru, formal job opportunities will be taken advantage of for our neighbors of Pueblo Libre and surrounding districts.
+                    <br>🗓 Date: Friday April 22
+                    <br>⏱ From 9am to 2pm
+                    <br>📍 Jr. José Santiago Wagner 1885
+                </p>
+            </div>
+            <div class="spotlight-element">
+                <h2>Follow us on Social Media</h2>
+                <img src="images/siguenos en redes sociales.jpg" alt="Siguenos">
+                <p>We are on your favorite social media to help you learn more about the activities we have for you. Stay tuned and subscribe so you will active the notifications.</p>
+            </div>
+        </div>
         <div class="weather">
             <h2>weather</h2>
-            
             <div class = "logo-number">
                 <img src="images/weather.png" alt="weather logo">
-                <h3>33&#8451</h3>
+                <h3><span id="temp"></span> &#8451</h3>
             </div>
-           
-            
             <h3 class="partly-cloudy">Partly Cloudy</h3>
             <hr>
-            <h4>Wind Speed: 2.5 km/h</h4>
+            <h4>Wind Speed: <span id="windspeed"></span> km/h</h4>
             <h4 class="wind-chill-number">Wind Chill: </h4>
         </div>
-          <div class="join">Join</div>
-          <div class="release">News release</div>
+          <div class="join">
+            Join us to receive notifications on the exciting events happening in Arlington, WA.
+        </div>
+          <div class="release">
+            <h2>News release</h2>
+            <p>Local man wins nobel peace prize for curing Mad Cow Disease in cows bringing peace to the world.</p>
+        </div>
     </main>
     <footer> 
         <div id="about">
@@ -96,5 +122,6 @@
     <script src="scripts/windchill.js"></script>
     <script src="scripts/index.js"></script>
     <script src="scripts/localStorage.js"></script>
+    <script src="scripts/weatherApi.js"></script>
 </body>
 </html>

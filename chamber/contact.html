@@ -5,18 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
+    <link rel="stylesheet" href="styles/join/join.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">    
     <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    
     <title>Contact | Chamber of Commerce</title>
 </head>
 <body>
     <header>
         <div id ="header-top">
-            <div id="logo">
-                <a href="index.html"><img id = "header-photo" src="images/lima.webp" alt="Lima Chamber of Commerce Logo"></a>
-            </div>
-           
+            <a id="logo" href="index.html">
+                <h1 id="logo">Lima Chamber of Commerce</h1>
+            </a>
             <nav>
                 <ul>
                     <li><a href="discover.html">Discover</a></li>
@@ -26,8 +29,9 @@
                 </ul>
             </nav>
             <div class="socials">
-                <a href="#"><img src="images/facebook-logo.png" alt="Facebook"></a>
-                <a href="#"><img src="images/instagram-logo.png" alt="Instagram"></a>
+                <p id = "datetime"></p>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
 
             <!-- Hamburger -->
@@ -36,15 +40,46 @@
         <div id="date">Saturday 28 January 2023</div>
     </header>
     <div class="alert">"🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."</div>
-    <main>
+    <main class="join">
         
-        
+        <form action="thankyou.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">First Name* <input type="text" name="firstname" placeholder="First Name" required></label>
+                <label class="top">Last Name <input type="text" name="lastname" placeholder="Last Name"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="email@gmail.com" required></label>
+                <label class="top">Phone* <input type="tel" name="phonenumber" placeholder="03456887789" required></label>
+                <label class="top">Business Name* <input type="text" name="businessname" placeholder="Business Name" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Are you a member of Lima Chamber of Commerce</legend>
+                <label class="side"><input type="radio" name="ismember" value="Yes"> Yes</label>
+                <label class="side"><input type="radio" name="ismember" value="No"> No</label>
+                <label class="side"><input type="radio" name="ismember" value="Unsure"> Unsure</label>
+          </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label class="top">
+                    Message Content 
+                    <textarea name="businessdescription" cols="30" rows="10" placeholder="Your Message"></textarea>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Register" class="btn">
+            <input type="hidden" id="loadDate" name="loadDate" value="">
+        </form>
 
     </main>
     <footer> 
         <div id="about">
-            <img class="img-fluid" src="images/lima.webp" width="80" height="80" alt="Lima Chamber of Commerce Logo">
-            <div id="address">
+            <img
+            class="img-fluid"
+            src="images/footerpic.png"
+            alt="Lima Chamber of Commerce Logo"
+          />            
+          <div id="address">
                 <h3>Visit Us</h3>
                 <p>Jr. Cartagena 565</p>
                 <p>Lima, 15084, Perú</p>
@@ -57,9 +92,7 @@
             </div>
         </div>
         <div id="copyright">
-            <p>&copy; <span id="copyrightYear"></span> Lima Chamber of Commerce | Sergio Menacho | WDD230 Project | </p>
-            <p>Last Modified: <span id="lastModified"></span></p>
-            <p><span id="lastVisited"></span></p>
+            <p>&copy; <span id="copyrightYear"></span> Lima Chamber of Commerce | WDD230 Project | Last Modified: <span id="lastModified"></span> | Number of Visit: <span id="Visited"></span></p>
         </div>
     </footer>
     <script src="scripts/windchill.js"></script>
