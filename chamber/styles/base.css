@@ -113,14 +113,15 @@ main.discover .discover-element:hover {
     box-shadow: 0 8px 28px rgba(0,0,0,.28);
 }
 
-main.join {color: #14213d;}
+main.join-page {color: #14213d;}
 
 main div {
+    /* text-align: center; */
     padding: 20px;
     background: #ddd;
 }
 
-.weather {grid-row: 2/3;}
+/* .weather {grid-row: 2/3;} */
 
 footer {
     background: #14213d;
@@ -179,7 +180,7 @@ footer #copyright {
 
 .weather > h3{
     color:white;   
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .weather h4{
@@ -201,6 +202,7 @@ main.directory > div {
 
 .main-content {
     position: relative;
+    padding: 0;
 }
 
 .main-content picture {
@@ -210,9 +212,13 @@ main.directory > div {
 }
 .main-content picture img {
     width: 100%;
+    height: 100%;
 }
 
 .main-content button {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
     width: 125px;
     height: auto;
     padding: 10px;
@@ -221,9 +227,6 @@ main.directory > div {
     color: #14213d;
     cursor: pointer;
     font-size: 18px;
-    position: absolute;
-    bottom: 10%;
-    right: 5%;
 }
 
 .main-content button:hover {
@@ -261,10 +264,65 @@ header #logo a img {
     align-items: center;
     background: #14213d;
     text-align: center;
+    padding: 0;
 
 }
 
 .spotlight-element img {
-    width: 70%;
+    width: 50%;
     height: auto;
+}
+
+.spotlight-element p {
+    width: 50%;
+}
+
+.main-content {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.event {
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+.weather {
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+
+.spotlights {
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+
+.join {
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+
+.release {
+    grid-column: 1/3;
+    grid-row: 7/8;
+}
+
+.release p {
+    width: 50%;
+}
+.release img {
+    width: 50%;
+}
+.weather #weatherIcon {
+    width: 10%;
+    margin-right: 10px;
+}
+
+/* align text and content to the center */
+.join, .event, .spotlights, .release, .weather {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

@@ -39,14 +39,14 @@
         <div id="date">Saturday 28 January 2023</div>
     </header>
     <div class="alert">"🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."</div>
-    <main class="join">
+    <main class="join-page">
         
         <form action="thankyou.html">
             <fieldset>
                 <legend>Personal Information</legend>
                 <label class="top">First Name* <input type="text" name="firstname" placeholder="First Name" required></label>
                 <label class="top">Last Name* <input type="text" name="lastname" placeholder="Last Name" required></label>
-                <label class="top">Title <input type="text" name="title" placeholder="Title"></label>
+                <label class="top">Title (Only letters, dashes, and spaces, 7 or more letters)<input type="text" name="title" placeholder="Title" pattern="[A-Za-z -]+" minlength="7"></label>
                 <label class="top">Email* <input type="email" name="email" placeholder="email@gmail.com" required></label>
                 <label class="top">Phone <input type="tel" name="phonenumber" placeholder="03456887789"></label>
             </fieldset>

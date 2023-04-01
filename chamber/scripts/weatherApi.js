@@ -12,24 +12,20 @@ const todayDayNumber = dateObject.getDay();
 // weekDay[6] = "Saturday";
 
 const URL = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/15084?unitGroup=metric&key=X82FS5VJBNVXK9SZXSK4QJW8D&contentType=json";
-
-const apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=-18.1667&lon=49.3833&exclude={part}&appid=fa87a3e2f8852a06dafa05368ef0fa93&units=imperial"
-
+        
 fetch(URL) 
     .then((response) => response.json())
     .then((weatherInfo)  => {
-        console.log(weatherInfo);
-        console.log(weatherInfo.currentConditions);
 
         /* update the current temperature */
-
-        let myList = weatherInfo.daily;
-
-        let forecastDayNumber = todayDayNumber;
-
+        let iconpath = 'https://raw.githubusercontent.com/visualcrossing/WeatherIcons/main/SVG/1st%20Set%20-%20Color/'+ weatherInfo.currentConditions.icon + '.svg';
+        let iconImage = document.getElementById("weatherIcon");
+        iconImage.src = iconpath;
+        iconImage.alt = weatherInfo.currentConditions.icon;
+        
         /* update the current information for the weather summary */
         document.getElementById("temp").textContent = weatherInfo.currentConditions.temp;
         document.getElementById("windspeed").textContent = weatherInfo.currentConditions.windspeed;
+        document.getElementById("description").textContent = weatherInfo.description;
     } )
-
 
